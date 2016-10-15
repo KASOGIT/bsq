@@ -4,8 +4,8 @@ TODO:  Program that searches the largest square in a map represented by 'x' for 
 
 ## Installation && Tools
 
-TODO: Just need to run 'make' on linux system.
-Map generator at ./plats/generate_plat.perl
+Just need to run 'make' on linux system.</br>
+Map generator at ./plats/generate_plat.perl</br>
 
 ## Usage
 
@@ -23,8 +23,8 @@ cd plats/ ; ./generate_plat.perl [SIZE_X] [SIZE_Y] [DENSITY] > [NAME_OUTPUT_FILE
 
 ## History
 
-TODO: First year project at Epitech (European Institute of Technology). Subject pdf at the root.
+First year project at Epitech (European Institute of Technology). Subject pdf at the root.
 
 ## License
 
-TODO: MIT
+MIT
