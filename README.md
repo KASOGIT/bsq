@@ -9,10 +9,9 @@ Map generator at ./plats/generate_plat.perl
 
 ## Usage
 
-TODO:
-./bsq [INPUT_FILE] -> Writes result on standard output.
-./bsq -n [INPUT_FILE] -> Writes position of find square on standard output.
-cd plats/ ; ./generate_plat.perl [SIZE_X] [SIZE_Y] [DENSITY] > [NAME_OUTPUT_FILE]
+1. ./bsq [INPUT_FILE] -> Writes result on standard output.
+2. ./bsq -n [INPUT_FILE] -> Writes position of find square on standard output.
+3. cd plats/ ; ./generate_plat.perl [SIZE_X] [SIZE_Y] [DENSITY] > [NAME_OUTPUT_FILE]
 
 ## Contributing
 
