@@ -5,7 +5,7 @@
 ## Login   <soto_a@epitech.net>
 ## 
 ## Started on  Mon Nov 10 11:40:59 2014 Kaso Soto
-## Last update Sat Oct 15 16:03:23 2016 
+## Last update Sat Oct 15 18:22:19 2016 
 ##
 
 NAME	= bsq
@@ -19,9 +19,9 @@ SRC	= bsq.c \
 	  print_square.c \
 	  get_next_line.c \
 
-OBJ	= $(SRC:.c=.o)
+OBJ	= $(addprefix src/, $(SRC:.c=.o))
 
-CFLAGS	= -I././include/ -W -Wall -Ofast -O3 -march=native
+CFLAGS	= -I./include/ -O2 -march=native -pipe
 
 LDFLAGS	= -L./lib/ -lmy
 
@@ -37,3 +37,5 @@ fclean : clean
 	 rm -f $(NAME)
 
 re: fclean all
+
+.PHONY:	all clean fclean re
