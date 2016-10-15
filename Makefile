@@ -5,7 +5,7 @@
 ## Login   <soto_a@epitech.net>
 ## 
 ## Started on  Mon Nov 10 11:40:59 2014 Kaso Soto
-## Last update Fri Jan 23 16:47:35 2015 Kaso Soto
+## Last update Sat Oct 15 16:03:23 2016 
 ##
 
 NAME	= bsq
@@ -23,8 +23,12 @@ OBJ	= $(SRC:.c=.o)
 
 CFLAGS	= -I././include/ -W -Wall -Ofast -O3 -march=native
 
-all :	 $(OBJ)
-	 $(CC) $(OBJ) -o $(NAME) -L./lib/ -lmy
+LDFLAGS	= -L./lib/ -lmy
+
+$(NAME): $(OBJ)
+	 $(CC) $(OBJ) $(LDFLAGS) -o $(NAME)
+
+all :	 $(NAME)
 
 clean :
 	 rm -f $(OBJ)
